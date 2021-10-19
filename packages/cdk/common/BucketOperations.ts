@@ -1,6 +1,7 @@
 import { Arn, Construct } from "monocdk";
 import { Bucket, IBucket } from "monocdk/aws-s3";
-import { IRole } from "monocdk/aws-iam";
+import { IRole
+} from "monocdk/aws-iam";
 
 export class BucketOperations {
   private static readonly importedBuckets: Record<string, IBucket> = {};
